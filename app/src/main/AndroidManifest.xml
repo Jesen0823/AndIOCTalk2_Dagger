@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jesen.andioctalk2_dagger">
+    package="com.jesen.dagger">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndIOCTalk2_Dagger">
         <activity
-            android:name=".MainActivity"
+            android:name="com.jesen.andioctalk2.dagger.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

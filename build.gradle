@@ -1,4 +1,7 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    daggerVersion = '2.38.1'
+    daggerCompilerVersion = '2.38.1'
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
         google()
