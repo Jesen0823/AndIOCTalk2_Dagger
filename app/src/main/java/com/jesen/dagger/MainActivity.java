@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.jesen.dagger.annotation.Click;
 import com.jesen.dagger.annotation.MeBindView;
 import com.jesen.dagger.annotation.MeContentView;
 import com.jesen.dagger.annotation.InjectTool;
@@ -18,8 +20,14 @@ import javax.inject.Inject;
 @MeContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
 
-    @MeBindView(R.id.btn_test)
-    Button button;
+    @MeBindView(R.id.btn_test1)
+    Button btnTest1;
+
+    @MeBindView(R.id.btn_test2)
+    Button btnTest2;
+
+    @MeBindView(R.id.btn_test3)
+    Button btnTest3;
 
     @Inject
     public Student student;
@@ -35,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("Main---"," MainActivity student:" + student.hashCode());
 
+        btnTest1.setText("test1 注入成功");
 
+    }
+
+    @Click(R.id.btn_test1)
+    private void show() {
+        Toast.makeText(this, "show is test1", Toast.LENGTH_SHORT).show();
     }
 }
