@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 // 作用到类上
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ContentView {
+public @interface MeContentView {
 
     int value() default -1;
 

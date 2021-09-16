@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 
-import com.jesen.dagger.annotation.ContentView;
+import com.jesen.dagger.annotation.MeBindView;
+import com.jesen.dagger.annotation.MeContentView;
 import com.jesen.dagger.annotation.InjectTool;
 import com.jesen.dagger.demo.DaggerStudentComponent;
 import com.jesen.dagger.demo.Student;
@@ -13,8 +15,11 @@ import com.jesen.dagger.demo.Student;
 import javax.inject.Inject;
 
 
-@ContentView(R.layout.activity_main)
+@MeContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
+
+    @MeBindView(R.id.btn_test)
+    Button button;
 
     @Inject
     public Student student;
