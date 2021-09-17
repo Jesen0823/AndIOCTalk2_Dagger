@@ -8,5 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndIOCTalk2_Dagger"
 include ':app'
-include ':custom_dagger2'
 include ':custom_dagger2_test'
+include ':custom_dagger2'
