@@ -11,6 +11,8 @@ import com.jesen.dagger.annotation.Click;
 import com.jesen.dagger.annotation.MeBindView;
 import com.jesen.dagger.annotation.MeContentView;
 import com.jesen.dagger.annotation.InjectTool;
+import com.jesen.dagger.annotation.jianrong.OnClickCommon;
+import com.jesen.dagger.annotation.jianrong.OnClickLongCommon;
 import com.jesen.dagger.demo.DaggerStudentComponent;
 import com.jesen.dagger.demo.Student;
 
@@ -50,5 +52,15 @@ public class MainActivity extends AppCompatActivity {
     @Click(R.id.btn_test1)
     private void show() {
         Toast.makeText(this, "show is test1", Toast.LENGTH_SHORT).show();
+    }
+
+    @OnClickCommon(R.id.btn_test2)
+    private  void test2(){
+        Toast.makeText(this, "onClickCommon", Toast.LENGTH_SHORT).show();
+    }
+
+    @OnClickLongCommon(R.id.btn_test3)
+    private void test3(){
+        Toast.makeText(this, "onLongClickCommon", Toast.LENGTH_SHORT).show();
     }
 }
