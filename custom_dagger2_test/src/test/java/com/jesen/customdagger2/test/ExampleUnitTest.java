@@ -1,4 +1,4 @@
-package com.jesen.customdagger2;
+package com.jesen.customdagger2.test;
 
 import org.junit.Test;
 
